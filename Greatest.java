@@ -6,7 +6,7 @@ class Great{
 				return a;
 			}
 			else
-				return b;
+				return c;
 		}else if(b > c) {
 			return b;
 		}
