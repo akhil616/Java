@@ -9,7 +9,7 @@ class Number {
 	}
 	
 	boolean isPositive() {
-		return (a > 0);
+		return (a >= 0);
 		
 	}
 	
@@ -25,21 +25,51 @@ class Number {
 		return (a % 2 == 0);
 	}
 	
-//	boolean isPrime() {
-//		
-//	}
-//	
-//	boolean isArmstrong() {
-//		
-//	}
+	boolean isPrime() {
+		if(a <= 1) {
+            return false;
+        }
+		for(int i = 2; i <= a/2; i++) {
+           if((a % i) == 0)
+               return  false;
+           }
+		return true;
+    }
+		
+	
+	boolean isArmstrong() {
+		int number = (int) a;
+		int total = 0, temp;
+		while (number != 0)
+	        {
+	            temp = number % 10;
+	            total = total + temp*temp*temp;
+	            number /= 10;
+	        }
+
+	        if(total == a)
+	        	return true;
+	        else
+	        	return false;
+	    }
+
+
+	@Override
+	public String toString() {
+		return "Zero = " + isZero() + ", Positive = " + isPositive() + ", Negative = " + isNegative()
+				+ ", Odd = " + isOdd() + ", isEven = " + isEven() + ", Prime = " + isPrime()
+				+ ", Armstrong = " + isArmstrong();
+	}
+	
+	
+
 }
 public class DisplayStatus {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Number n1 = new Number(5);
-		System.out.println(n1.isOdd());
-
+		Number n1 = new Number(407);
+		System.out.println(n1.toString());
 	}
 
 }
