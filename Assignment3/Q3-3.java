@@ -9,7 +9,7 @@ class InvalidAge extends Exception {
 
 class Age1 {
 	boolean checkAge(int age) throws InvalidAge{
-		if (age > 18) {
+		if (age >= 18) {
 			return true;
 		}
 		else
@@ -22,7 +22,7 @@ public class UserDefinedException {
 	public static void main(String[] args) {
 		Age1 a1 = new Age1();
 		try {
-			a1.checkAge(12);
+			a1.checkAge(8);
 			System.out.println("You are eligible to vote");
 		} catch (InvalidAge ia) {
 			System.out.println(ia.toString());
