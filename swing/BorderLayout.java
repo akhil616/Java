@@ -6,7 +6,7 @@ public class Main{
     JFrame frame = new Frame();
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setSize(500, 500);
-    frame.setLayout(new BorderLayout); //By default layout in Border
+    frame.setLayout(new BorderLayout()); //By default layout in Border
     frame.setVisible(true);
 
     JButton b1 = new JButton("NORTH");
