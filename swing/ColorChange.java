@@ -9,7 +9,7 @@ public class Main {
     f.setLayout(null);
     f.setSize(500, 500);
     
-    TextField tf = new TextField();
+    JTextField tf = new JTextField();
     tf.setBounds(60, 50 180, 25);
 
     JButton button = new JButton("Click Here");
