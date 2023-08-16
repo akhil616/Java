@@ -3,11 +3,13 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class Main implements ActionListener {
+  TextField tf;
+  JButton button;
   Main() {
-    TextField tf = new TextField();
+    tf = new TextField();
     tf.setBounds(60, 50, 180, 25);
 
-    JButton button = new Jbutton("Click Here");
+    button = new Jbutton("Click Here");
     button.setBounds(100, 120, 80, 30);
     button.addActionListener(this);
 
