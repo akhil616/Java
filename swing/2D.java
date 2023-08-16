@@ -39,7 +39,7 @@ class Shapes extends JFrame {
 		};
 		c.add(p,BorderLayout.CENTER);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		ssetVisible(true);
+		setVisible(true);
 	}
 }
 public class TwoDShapes {
