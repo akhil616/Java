@@ -1,7 +1,7 @@
 import java.awt.*;
 import javax.swing.*';
 
-class Shapes extends JFrame{
+class Shapes extends JFrame {
 	Container c;
 	Shapes(){
 		setSize(500,500);
